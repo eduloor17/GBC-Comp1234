@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="This is basic web page. we are going to learn about
+    section semantic elements, colours, basic css, relative values, absolute value">
+  <meta name="keywords" content="HTML, list, figure, semantic, entity">
+  <meta name="Author" content="Eduardo Loor">
+    <title>Basic HTML web page for lab 5 comp1234</title>
+    <link rel="icon" href="assets/img/favicon.ico">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <style>
+        #backgroup {
+            background-color: yellowgreen;
+        }
+        body{
+            background-color: lightcoral;
+        }
+
+    </style>
+</head>
+<body style="background-color: lightblue">
+<header id="backgroup">
+    <!--  This is where you put your HTML code. -->
+    <h1>Basic HTML web page for lab 5</h1>
+    <p><a href="#bottom">Go to the bottom of the page</a></p>
+</header>
+<main>
+    <h2>Block and inline element</h2>
+    <p>This is a plain text and block tag</p>
+    <br><br>
+    <strong>This is a bold text</strong>
+    <strong>This is a bold text</strong>
+    <p>
+        This is
+        <strong>
+            bold text.
+        </strong>
+    </p>
+    <br>
+    <br>
+    <hr>
+    <hr>
+
+    <h2>Attributes</h2>
+    <p id="idatt">This id attribute allow us to uniquely identify an element/tag
+    and use that to select the element in CSS and Javascript</p>
+    <p id="bcolour">This id attribute allow us to uniquely identify an element/tag
+        and use that to select the element in CSS and Javascript</p>
+    <p class="ccolour tagelement">The class attribute lets us identify more than one element/tag
+        to apply change using CSS and Javascript</p>
+    <p class="ccolour">The class attribute lets us identify more than one element/tag
+        to apply change using CSS and Javascript</p>
+    <br>
+    <br>
+    <br>
+    <h2>Links</h2>
+    <a href="https://gbc.mobihelp.ca/"> GBC Mobil Help</a>
+    <p>
+        One of the better references sites for HTML, CSS, and Javascript is
+        <a href="https://www.w3schools.com/">W3 school.</a>
+    </p>
+    <p>
+        This is my <a href="../wk02/template.html">Template file from week 2 as a document relative reference</a>
+
+    </p>
+    <p>
+        This is my <a href="/comp1234/lab/exercises/wk02/template.html">Template file from week 2 as a root relative reference</a>
+
+    </p>
+    <p>
+        This is my <a href="/index.html">Index.html file from lab1 as a root reference</a>
+
+    </p>
+    <p>
+        This is my <a href="../../../../index.html">Index.html file from lab1 as a document relative reference</a>
+
+    </p>
+    <br>
+    <br>
+    <br>
+    <br>
+    <h2>images</h2>
+    <a href="https://en.wikipedia.org/wiki/Cat"></a>
+    <img src="assets/img/cat.jpg" alt="cat winking" title="cat winking" width="288" height="192">
+    <img src="../../../../assets/img/cat.jpg" alt="cat winking" width="200" height="150">
+    <figure>
+        <img src="assets/img/folders_comp1234.png" alt="">
+        <figcaption>fig. 01 folder structure</figcaption>
+    </figure>
+
+    <br>
+    <br>
+    <br>
+    <h3>List</h3>
+    <h4>Unordered list</h4>
+    <ul>
+        <li>Apple</li>
+        <li>Orange</li>
+        <li>Banana</li>
+        <li>Lime </li>
+        <li>
+            <a href="https://www.w3schools.com">w3school</a>
+        </li>
+    </ul>
+    <h4>Ordered list</h4>
+    <ol style="list-style-type: decimal-leading-zero">
+        <li>Apple</li>
+        <li>Orange</li>
+        <li>Banana</li>
+        <li>Lime </li>
+        <li>
+            <ol style="list-style-type:lower-alpha">
+                <li>Apple</li>
+                <li>Orange</li>
+                <li>Banana</li>
+                <li>Lime </li>
+            </ol>
+        </li>
+    </ol>
+    <section>
+        <!--h3#lorem.loremp{Lorem Ipsum}+(p>lorem30)*5  an tap-->
+        <!-- how to put clas in p  choose option select more than 2 and write-->
+        <h3 id="lorem" class="loremp">Lorem Ipsum</h3>
+        <p class="loremp">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias atque eius necessitatibus omnis, quas ratione
+            suscipit vel. Accusamus, amet, aspernatur distinctio explicabo labore odit possimus quia sapiente, similique
+            sunt voluptatum.</p>
+        <p class="loremp" >Ab alias amet consectetur cum distinctio dolorum error est exercitationem expedita explicabo laboriosam
+            laudantium magnam maiores modi natus nobis numquam obcaecati officia perferendis, placeat quas quasi quis
+            vel vitae voluptatem.</p>
+        <p class="loremp">Ad alias amet aspernatur autem consectetur dicta dolor dolorem doloremque earum eum ex facere ipsum maxime
+            minus nostrum porro quam quo repellat sed sunt ut, vel voluptate. Commodi laboriosam, vero?</p>
+        <p class="loremp">A adipisci aperiam asperiores, at atque eveniet in magni neque nostrum officia placeat provident ratione
+            repellendus! Cupiditate, deleniti, fuga hic ipsa iure, odit praesentium ratione recusandae repudiandae vitae
+            voluptates voluptatibus.</p>
+        <div>
+        <p> test test</p>
+        </div>
+        <p class="loremp">A accusamus accusantium amet, at blanditiis, consectetur consequatur, dicta eaque error facilis id illum
+            inventore ipsa ipsum iure laboriosam molestias nesciunt pariatur quia quis rem similique tenetur unde ut
+            vero.</>
+        <br>
+        <p1>check this links </p1>
+        <a href="https://www.w3schools.com/css/css_pseudo_classes.asp">css pseudo</a>
+        <a href="https://www.w3schools.com/Css/css_combinators.asp">css combinators</a>
+    </section>
+    </main>
+    <footer id="bottom">
+        <p><a href="#top">Go to the top of the page</a></p>
+        <p>copyright &copy; by 215 &cent; Corp. </p>
+    </footer>
+
+    <script src=https://my.gblearn.com/js/loadscript.js></script>
+
+</body>
+</html>

@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="This is a Basic HTML and CSS web page. We are going to learn about
+      section semantic elements, colours, basic CSS, relative values,absolute value, and div.  ">
+    <meta name="keywords" content="CSS, div, colours, relative, absolute, section">
+    <meta name="author" content="Leonard Zajaczkowski">
+    <title>Basic HTML and CSS Web Page for lab 05</title>
+    <link rel="icon" href="assets/img/favicon.ico">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <style>
+        #idatt{
+            color:red;
+        }
+        #bcolour{
+            background: yellow;
+        }
+        .ccolour{
+            color: green;
+        }
+        body{
+            background-color: lightblue;
+        }
+
+    </style>
+</head>
+<body id="cbody">
+    <header id="top">
+        <h1>Basic HTML Web Page for lab 04</h1>
+        <p><a href="#bottom">Go to the bottom of the page.</a></p>
+    </header>
+    <main>
+        <h2>Block and inline elements</h2>
+        <p>This is plain text in a block element.</p>
+        <strong>bold inline element</strong>
+        <strong>This is another strong inline element</strong>
+        <p>
+            This is a block element with a
+            <strong>
+                bold inline element
+            </strong>.
+        </p>
+
+        <br>
+        <hr>
+        <br>
+
+        <h2>Attributes</h2>
+        <p id="idatt">
+            This id attribute allows us to uniquely identify an element/tag
+            and allows us to select that element in CSS or Javascript.
+        </p>
+        <p id="bcolour"><!-- ID is unique -->
+            This id attribute allows us to uniquely identify an element/tag
+            and allows us to select that element in CSS or Javascript.
+        </p>
+        <p class="ccolour tagelement">
+            The class atribute allows us to identify more than one tag/element
+            to apply a change with CSS or Javascript.
+        </p>
+        <p class="ccolour">
+            The class atribute allows us to identify more than one tag/element
+            to apply a change with CSS or Javascript.
+        </p>
+        <br>
+        <hr>
+        <br>
+        <h3>Links</h3>
+        <a href="https://www.georgebrown.ca/">This goes to the George Brown Web Page.</a>
+        <p> One of the better HTML sites is
+            <a href="https://www.w3schools.com/"> the w3 schools Web Page.</a>
+        </p>
+        <p>
+            This is my <a href="../wk02/template.html">template file using a document relative path.</a>
+        </p>
+        <p>
+            This is my <a href="/comp1234/exercises/wk02/template.html">template file using a root relative path.</a>
+        </p>
+        <p>
+            This is my <a href="/">index.html file using a root relative path.</a>
+        </p>
+        <p>
+            This is my <a href="../../../index.html">index.html file using a document relative path.</a>
+        </p>
+        <br>
+        <hr>
+        <br>
+        <h3>Lists</h3>
+        <p>test</p>
+        <h4>Unordered List</h4>
+        <ul style="list-style-type: square;">
+            <li>Apple</li>
+            <li>Orange</li>
+            <li>Banana</li>
+            <li>Water</li>
+        </ul>
+
+        <h4>Ordered List</h4>
+        <ol style="list-style-type: decimal-leading-zero;">
+            <li>Apple</li>
+            <li>Orange</li>
+            <li>Banana</li>
+            <li>Water</li>
+            <li>
+                <ol style="list-style-type: lower-alpha;">
+                    <li>Apple</li>
+                    <li>Orange</li>
+                    <li>Banana</li>
+                    <li>Water</li>
+                </ol>
+            </li>
+        </ol>
+        <br>
+        <hr>
+        <br>
+
+        <section>
+<!--            h3#lorem.loremp{Lorem Ipsum}+(p>lorem30)*5-->
+
+
+
+            <h3 id="lorem" class="loremp">Lorem Ipsum</h3>
+            <p class="loremp">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab accusantium aut delectus ea enim expedita
+                explicabo facere facilis id ipsa iusto necessitatibus quam reprehenderit sed sequi totam vel, voluptas
+                voluptatem!</p>
+            <p class="loremp">Consectetur consequuntur dolore dolorum earum eveniet fugiat iusto odio pariatur. A aliquid beatae
+                blanditiis culpa dolores dolorum ea eaque eos error, explicabo, labore, laborum numquam quidem quis quos
+                saepe voluptatibus!</p>
+            <p class="loremp">A assumenda beatae consequatur culpa deserunt, esse eveniet, fugiat fugit iure maxime quas quasi sequi
+                similique ullam unde? Alias atque doloribus illo nam odio, quae quaerat quia recusandae temporibus
+                vero.</p>
+            <p id="secBot" class="loremp">A alias, amet animi asperiores blanditiis consequatur delectus dignissimos error ex facilis fuga, hic
+                inventore ipsum itaque iure minus molestiae molestias necessitatibus nisi nostrum odit quaerat sunt
+                voluptate voluptatem voluptates.</p>
+            <p class="loremp">Ab architecto atque autem blanditiis cum dolore dolorem doloremque esse expedita ipsa iste nesciunt quia,
+                repellat repellendus repudiandae saepe voluptates voluptatibus. Alias animi culpa itaque repellendus
+                tempora vel veritatis voluptatum!</p>
+
+        </section>
+
+
+        <br>
+        <hr>
+        <br>
+
+        <h3>Images</h3>
+        <img src="../../lecture/wk03/assets/img/cat.jpg" alt="cat winking" width="288" height="192" title="Cat Winking">
+
+        <img src="../../lecture/wk03/assets/img/cat.jpg" alt="cat winking" width="200" height="130">
+        <figure>
+            <img src="assets/img/folders_comp1234.png">
+            <figcaption>Fig. 01 folder structure</figcaption>
+        </figure>
+        <br>
+        <hr>
+        <br>
+    </main>
+    <footer id="bottom">
+        <p><a href="#top">Go to the top of the page.</a></p>
+        <p>copyright &copy; 2023 by &cent;Leonard Zajaczkowski</p>
+        <br>
+        <hr>
+        <br>
+    </footer>
+    <script src=https://my.gblearn.com/js/loadscript.js></script>
+
+</body>
+</html>

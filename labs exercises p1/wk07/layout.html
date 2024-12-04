@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>box model</title>
+    <style>
+       #wrapper{
+           width: 700px;
+           background-color: lightcyan;
+           margin: 0 auto;
+           border: solid black 1px;
+       }
+        header, main, aside, footer {
+            height: 100px;
+            border: solid black 1px;
+        }
+        main{
+            float: left;
+            width: 50%;
+            box-sizing: border-box;
+        }
+        aside{
+            float: left;
+            width: 25%;
+            box-sizing: border-box;
+        }
+       #aside2{
+           float: left;
+           width: 25%;
+           box-sizing: border-box;
+       }
+
+        footer{
+            clear: both;
+        }
+    </style>
+</head>
+<body>
+<div id="wrapper">
+    <header>header</header>
+    <aside>aside</aside>
+    <main>main</main>
+
+    <aside id="aside2">aside2</aside>
+    <footer>footer</footer>
+</div>
+</body>
+</html>

@@ -1,0 +1,73 @@
+*{
+    /*  start(*) we use to apply to all code */
+     /*margin: 0; */
+   /* margin: 1.5em; */
+   /* margin: 1.5em; */
+    margin: 10px;
+}
+#backcolor{
+    background-color: lightgray;
+}
+body{
+    background-color: tan;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#idatt {
+    color: red;
+}
+
+.ccolour {
+    color: blue;
+}
+.loremp {
+    font-family: "Times New Roman", times, serif;
+}
+#lorem{
+    font-size: 150%;
+    color: rgb(0 ,0 , 255);
+    color: #0000FF;
+;
+}
+/*section p{
+    background-color: white;
+}*/
+section>p{
+    background-color: white;
+}
+[class]{
+    background-color: yellow;
+}
+/*[href]{
+    background-color: yellow;
+}*/
+[href="https://www.w3schools.com/"]{
+    background-color: blue;
+}
+[href^=".."]{
+    border: red;
+}
+[href$="template.html"]{
+    background-color: white;
+}
+#lorem::first-letter{
+    font-size: 200%;
+    color: green;
+}
+section>h3+p{
+    background-color: blue;
+}
+/*li ol li:first-child{
+    color: red
+}*/
+li>ol>li:first-child{
+    color: red;
+}
+li>ol>li:nth-child(3){
+    color: blue;
+}
+li>ol>li:nth-child(2){
+    color: olive;
+}
+li>ol>li:last-child{
+    color: yellow;
+}

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="This is basic web page. we are going to learn about
+    img tag, anchor tag, relative and absolute referece, heading and paragraph">
+  <meta name="keywords" content="HTML, relative, references, anchor, absolute">
+  <meta name="Author" content="Eduardo Loor">
+    <title>Basic HTML web page for lab 3</title>
+    <style>
+        #idatt {
+            color: red;
+        }
+
+        .ccolour {
+            color: blue;
+        }
+
+    </style>
+</head>
+<body>
+    <!--  This is where you put your HTML code. -->
+    <h1>Basic HTML web page for lab 3</h1>
+    <h2>Block and inline element</h2>
+    <p>This is a plain text and block tag</p>
+    <br><br>
+    <strong>This is a bold text</strong>
+    <strong>This is a bold text</strong>
+    <p>
+        This is
+        <strong>
+            bold text.
+        </strong>
+    </p>
+    <br>
+    <br>
+    <hr>
+    <hr>
+
+    <h2>Attributes</h2>
+    <p id="idatt">This id attribute allow us to uniquely identify an element/tag
+    and use that to select the element in CSS and Javascript</p>
+    <p id="bcolour">This id attribute allow us to uniquely identify an element/tag
+        and use that to select the element in CSS and Javascript</p>
+    <p class="ccolour tagelement">The class attribute lets us identify more than one element/tag
+        to apply change using CSS and Javascript</p>
+    <p class="ccolour">The class attribute lets us identify more than one element/tag
+        to apply change using CSS and Javascript</p>
+    <br>
+    <br>
+    <br>
+    <h2>Links</h2>
+    <a href="https://gbc.mobihelp.ca/"> GBC Mobil Help</a>
+    <p>
+        One of the better references sites for HTML, CSS, and Javascript is
+        <a href="https://www.w3schools.com/">W3 school.</a>
+    </p>
+    <p>
+        This is my <a href="../wk02/template.html">Template file from week 2 as a document relative reference</a>
+
+    </p>
+    <p>
+        This is my <a href="/comp1234/lab/exercises/wk02/template.html">Template file from week 2 as a root relative reference</a>
+
+    </p>
+    <p>
+        This is my <a href="/index.html">Index.html file from lab1 as a root reference</a>
+
+    </p>
+    <p>
+        This is my <a href="../../../../index.html">Index.html file from lab1 as a document relative reference</a>
+
+    </p>
+    <br>
+    <br>
+    <br>
+    <br><h2>images</h2>
+    <img src="assets/img/cat.jpg" alt="cat winking">
+    <img src="../../../../assets/img/cat.jpg" alt="cat winking">
+    <script src=https://my.gblearn.com/js/loadscript.js></script>
+
+</body>
+</html>

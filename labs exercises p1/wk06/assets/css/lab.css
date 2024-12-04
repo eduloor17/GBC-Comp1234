@@ -1,0 +1,43 @@
+/*  UsingembeddedCSS:
+    1. Change the colour of header 1 fonts to your favorite colour.
+    2. Change font style of header 1 fonts to italic.
+    3. Add a border around the header ( 2 pixels, choose a colour, choose
+    a style)
+    4. Fill the header with a gradient from bottom to top with light blue to
+    pink. */
+h1{
+    color: darkorange;
+    font-style: italic;
+}
+header {
+    border: 2px darkred dotted;
+    background-image: linear-gradient(to top,lightblue,pink);
+}
+/* UsinganexternalCSSfileandpseudo-classelements.
+    1. Add 0.5 em padding to each list item.
+    2. Add a red border to each list item. (2 pixels and solid for the border) */
+main>ul>li:first-child{
+    padding: 0.5em;
+    border: solid 2px red;
+}
+main>ul>li:nth-last-child(2) {
+    padding: 0.5em;
+    border: solid 2px red;
+}
+main>ul>li:last-child {
+    padding: 0.5em;
+    border: solid 2px red;
+}
+/* Using an external CSS file and pseudo-class elements.
+    1. Add a border around the entire list (You choose the values of the border).
+    2. Round the corners of the border */
+/*main>ol {
+    list-style-type: georgian;
+    border: maroon dotted 5px;
+    border-radius: 40px;
+}*/
+main>ol:last-child {
+    list-style-type: georgian;
+    border: maroon dotted 5px;
+    border-radius: 40px;
+}

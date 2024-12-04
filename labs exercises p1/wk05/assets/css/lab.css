@@ -1,0 +1,22 @@
+header {
+    color: blue;
+    font-style: italic;
+}
+
+li::first-line{
+font-size: 1.5em;
+}
+li:first-child{
+    background-color: lightblue;
+}
+li:last-child{
+    background-color: pink;
+}
+li:nth-child(2){
+    background-color: yellow;
+}
+footer {
+    border: solid black 5px;
+}
+
+

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="This is basic web page. we are going to learn about
+    semectic element, img elements, figure element, lists, anchors, and character entities.">
+  <meta name="keywords" content="HTML, list, figure, semantic, entity">
+  <meta name="Author" content="Eduardo Loor">
+    <title>Basic HTML web page for lab 5</title>
+    <link rel="icon" href="assets/img/favicon.ico">
+
+    <style>
+        #idatt {
+            color: red;
+        }
+
+        .ccolour {
+            color: blue;
+        }
+
+    </style>
+</head>
+<body>
+<header id="top">
+    <!--  This is where you put your HTML code. -->
+    <h1>Basic HTML web page for lab 5</h1>
+    <p><a href="#bottom">Go to the bottom of the page</a></p>
+</header>
+<main>
+    <h2>Block and inline element</h2>
+    <p>This is a plain text and block tag</p>
+    <br><br>
+    <strong>This is a bold text</strong>
+    <strong>This is a bold text</strong>
+    <p>
+        This is
+        <strong>
+            bold text.
+        </strong>
+    </p>
+    <br>
+    <br>
+    <hr>
+    <hr>
+
+    <h2>Attributes</h2>
+    <p id="idatt">This id attribute allow us to uniquely identify an element/tag
+    and use that to select the element in CSS and Javascript</p>
+    <p id="bcolour">This id attribute allow us to uniquely identify an element/tag
+        and use that to select the element in CSS and Javascript</p>
+    <p class="ccolour tagelement">The class attribute lets us identify more than one element/tag
+        to apply change using CSS and Javascript</p>
+    <p class="ccolour">The class attribute lets us identify more than one element/tag
+        to apply change using CSS and Javascript</p>
+    <br>
+    <br>
+    <br>
+    <h2>Links</h2>
+    <a href="https://gbc.mobihelp.ca/"> GBC Mobil Help</a>
+    <p>
+        One of the better references sites for HTML, CSS, and Javascript is
+        <a href="https://www.w3schools.com/">W3 school.</a>
+    </p>
+    <p>
+        This is my <a href="../wk02/template.html">Template file from week 2 as a document relative reference</a>
+
+    </p>
+    <p>
+        This is my <a href="/comp1234/lab/exercises/wk02/template.html">Template file from week 2 as a root relative reference</a>
+
+    </p>
+    <p>
+        This is my <a href="/index.html">Index.html file from lab1 as a root reference</a>
+
+    </p>
+    <p>
+        This is my <a href="../../../../index.html">Index.html file from lab1 as a document relative reference</a>
+
+    </p>
+    <br>
+    <br>
+    <br>
+    <br>
+    <h2>images</h2>
+    <a href="https://en.wikipedia.org/wiki/Cat"></a>
+    <img src="assets/img/cat.jpg" alt="cat winking" title="cat winking" width="288" height="192">
+    <img src="../../../../assets/img/cat.jpg" alt="cat winking" width="200" height="150">
+    <figure>
+        <img src="assets/img/folders_comp1234.png" alt="">
+        <figcaption>fig. 01 folder structure</figcaption>
+    </figure>
+
+    <br>
+    <br>
+    <br>
+    <h3>List</h3>
+    <h4>Unordered list</h4>
+    <ul>
+        <li>Apple</li>
+        <li>Orange</li>
+        <li>Banana</li>
+        <li>Lime </li>
+        <li>
+            <a href="https://www.w3schools.com">w3school</a>
+        </li>
+    </ul>
+    <h4>Ordered list</h4>
+    <ol style="list-style-type: decimal-leading-zero">
+        <li>Apple</li>
+        <li>Orange</li>
+        <li>Banana</li>
+        <li>Lime </li>
+        <li>
+            <ol style="list-style-type:lower-alpha">
+                <li>Apple</li>
+                <li>Orange</li>
+                <li>Banana</li>
+                <li>Lime </li>
+            </ol>
+        </li>
+    </ol>
+    </main>
+    <footer id="bottom">
+        <p><a href="#top">Go to the top of the page</a></p>
+        <p>copyright &copy; by 215 &cent; Corp. </p>
+    </footer>
+
+    <script src=https://my.gblearn.com/js/loadscript.js></script>
+
+</body>
+</html>

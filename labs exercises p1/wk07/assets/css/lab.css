@@ -1,0 +1,45 @@
+body {
+    background-color: white;
+}
+div {
+    background-image: linear-gradient(to top,dodgerblue, forestgreen);
+    margin: auto;
+    width: 40%;
+    color: white;
+}
+header , main , footer {
+    padding: 10px 15px 10px 15px;
+}
+header {
+    border: solid darkred 4px;
+}
+header>nav li {
+    float: left;
+}
+nav{
+    background-color: blue;
+}
+nav>ul {
+    list-style-type: none;
+    /*border: 2px solid;*/
+    padding: 0;
+    overflow: hidden;
+    margin: 0 auto;
+    width: fit-content;
+}
+nav>ul>li>a {
+    color: white;
+    padding: 14px 16px;
+    display: block;
+    text-decoration: underline;
+}
+nav>ul>li>a:hover {
+    background-color: red;
+}
+main{
+    clear: both;
+}
+main>ul>li:nth-child(odd){
+    background-color: darkslategray;
+    width: 200px;
+}
