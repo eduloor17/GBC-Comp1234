@@ -1,0 +1,43 @@
+*{
+    font-family: Chalkboard;
+}
+header{
+    height: 200px;
+    border: 3px solid red;
+    background-color: lightblue;
+    margin: 0.2em;
+}
+main{
+    height: 200px;
+    border: 3px solid red;
+    background-color: lightblue;
+    float: left;
+    width: 64%;
+    box-sizing: border-box;
+    margin: 0.2em;
+}
+article{
+    height: 200px;
+    border: 3px solid red;
+    background-color: lightblue;
+    float: right;
+    width: 17%;
+    box-sizing: border-box;
+    margin: 0.2em;
+}
+aside {
+    height: 200px;
+    border: 3px solid red;
+    background-color: lightblue;
+    width: 17%;
+    box-sizing: border-box;
+    float: right;
+    margin: 0.2em;
+}
+footer{
+    height: 200px;
+    border: 3px solid red;
+    background-color: lightblue;
+    clear: both;
+    margin: 0.2em;
+}

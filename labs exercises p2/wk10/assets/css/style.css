@@ -1,0 +1,50 @@
+*{
+  color: blue;
+  background-color: lightseagreen;
+}
+
+#form{
+    width: fit-content;
+    height: fit-content;
+    border: 3px dotted black;
+    margin: 0 auto;
+}
+span{
+    color: red;
+}
+
+label {
+    /*border: 2px solid red;*/
+    font-weight: bold;
+}
+.information{
+margin: 0.5em;
+}
+
+button{
+    border: solid 4px darkblue;
+    border-radius: 30%;
+    padding: 6px;
+    margin-bottom: 5px ;
+}
+#firstname, #lastname  {
+    border: 2px solid darkblue;
+    width: 180px;
+    overflow: hidden;
+
+}
+#email  {
+    border: 2px solid darkblue;
+    width: 367px;
+}
+select{
+    border: 2px solid darkblue;
+    width: 220px;
+    text-align: center;
+    border-radius: 30%;
+}
+textarea{
+    border: 2px solid darkblue;
+    border-radius: 0 25%;
+}
+

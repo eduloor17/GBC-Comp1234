@@ -1,0 +1,18 @@
+body{
+    font-family: "Comic Sans MS", sans-serif;
+}
+
+table, td, th {
+    border: solid black 3px;
+    border-collapse: collapse;
+}
+table{
+    width: 50%;
+    margin: 1em auto;
+}
+#stable thead, #stable tfoot{
+    background-color: lightblue;
+}
+#stable>tbody>tr>td:nth-child(2n-1) {
+    background-color: sandybrown;
+}

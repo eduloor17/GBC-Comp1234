@@ -1,0 +1,50 @@
+body{
+    background-color: tan;
+}
+table, th, td{
+    border: 2px black solid;
+    border-collapse: collapse;
+}
+table{
+    width: 70%;
+    margin: 1em auto;
+}
+h2{
+    text-align: center;
+}
+#rtable thead, #rtable tfoot{
+    background-color: lightblue;
+}
+#rtable>tbody>tr>td:last-child:not(.noalign){
+    text-align: right;
+}
+#rtable>tbody>tr:nth-child(2n){
+    background-color: lightgray;
+}
+#rtable>tbody>tr:nth-child(2n-1){
+    background-color: lightpink;
+}
+#ntable #nest1table caption{
+    caption-side: bottom;
+}
+#ntable>tbody>tr{
+    height: 300px;
+}
+#ntable td{
+    vertical-align: top;
+}
+#ntable td:last-child{
+    vertical-align: bottom;
+}
+/*#stable .col1, .col6{*/
+/*    border: darkred 4px solid;*/
+/*}*/
+thead, tfoot{
+    background-color: lightgreen;
+}
+/*#stable col:nth-child(odd){*/
+/*    background-color: lightgray;*/
+/*}*/
+.highlight{
+    background-color: yellow;
+}

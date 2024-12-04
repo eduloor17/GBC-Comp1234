@@ -1,0 +1,11 @@
+*{
+    background-color: #54e8aa;
+    font-family: "Comic Sans MS", sans-serif;
+}
+h1 {
+    border: 3px solid blue;
+    padding: 3px 8px;
+    border-radius: 30px;
+    width: fit-content;
+    box-shadow: 10px 10px rgba(47, 168, 115, 0.34);
+}

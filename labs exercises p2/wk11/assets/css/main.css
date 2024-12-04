@@ -1,0 +1,21 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+[type='button'] {
+    padding: 1em;
+    margin: 2em;
+    border-radius: 20px;
+    box-shadow: 4px 4px 4px black;
+    background-image: Linear-gradient(violet, purple);
+    color: white;
+}
+
+[type='button'] :active {
+background-image: linear-gradient(purple, violet);
+    box-shadow: 0 5px black;
+    color: gray;
+    transform: translateY(4px);
+}
+

@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tables</title>
+    <link rel="stylesheet" href="assets/css/maind.css">
+</head>
+<body>
+    <div id="wrapper">
+        <h2>Regular Table</h2>
+        <table id="rtable">
+            <thead>
+                <tr>
+                    <th colspan="3">My Table</th>
+                </tr>
+                <tr>
+                    <th>Date</th>
+                    <th>Name</th>
+                    <th>Cost</th>
+                </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>Jan.</td>
+                <td>CostPro.</td>
+                <td>$100</td>
+            </tr>
+            <tr>
+                <td>Dec.</td>
+                <td>KrazyKids.</td>
+                <td>$200</td>
+            </tr>
+            <tr>
+                <td>Mar.</td>
+                <td>LazyTeachers</td>
+                <td rowspan="2">$500</td>
+            </tr>
+            <tr>
+                <td>Mar.</td>
+                <td class="noalign">LazyTeachers</td>
+<!--                <td>$500</td>-->
+            </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <th colspan="2">Total:</th>
+<!--                    <th></th>-->
+                    <th>$1300</th>
+                </tr>
+            </tfoot>
+        </table>
+        <h2>Nested Tables</h2>
+        <table id="ntable">
+            <tr>
+                <td>
+                    <table id="nest1table">
+                        <caption>Nested Table One</caption>
+                        <tr>
+                            <td>r1 c1</td>
+                            <td>r1 c2</td>
+                        </tr>
+                        <tr>
+                            <td>r2 c1</td>
+                            <td>r2 c2</td>
+                        </tr>
+                    </table>
+                </td>
+                <td>
+                    <table id="nest2table">
+                        <caption>Nested Table Two</caption>
+                        <tr>
+                            <td>r1 c1</td>
+                            <td>r1 c2</td>
+                            <td>r1 c2</td>
+                        </tr>
+                        <tr>
+                            <td>r2 c1</td>
+                            <td>r2 c2</td>
+                            <td>r2 c2</td>
+                        </tr>
+                        <tr>
+                            <td>r3 c1</td>
+                            <td>r3 c2</td>
+                            <td>r3 c2</td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+
+        <table id="stable">
+            <caption>        table#stable>(thead>tr>th{title$}*6)+(tbody>(tr>td{data$}*6)*5)+(tfoot>tr>th{foot$}*6)
+            </caption>
+            <colgroup>
+                <col class="col1">
+                <col class="col2">
+                <col class="col3">
+                <col class="col4">
+                <col class="col5">
+                <col class="col6">
+            </colgroup>
+            <thead>
+            <tr>
+                <th>title1</th>
+                <th>title2</th>
+                <th>title3</th>
+                <th>title4</th>
+                <th>title5</th>
+                <th>title6</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>data1</td>
+                <td>data2</td>
+                <td>data3</td>
+                <td>data4</td>
+                <td>data5</td>
+                <td>data6</td>
+            </tr>
+            <tr>
+                <td>data1</td>
+                <td>data2</td>
+                <td>data3</td>
+                <td>data4</td>
+                <td>data5</td>
+                <td>data6</td>
+            </tr>
+            <tr>
+                <td>data1</td>
+                <td>data2</td>
+                <td>data3</td>
+                <td>data4</td>
+                <td>data5</td>
+                <td>data6</td>
+            </tr>
+            <tr>
+                <td>data1</td>
+                <td>data2</td>
+                <td>data3</td>
+                <td>data4</td>
+                <td>data5</td>
+                <td>data6</td>
+            </tr>
+            <tr>
+                <td>data1</td>
+                <td>data2</td>
+                <td>data3</td>
+                <td>data4</td>
+                <td>data5</td>
+                <td>
+                    <form>
+                        <label for="fav">Favorite Colour:</label>
+                        <input type="text" id="fav" name="fav">
+                    </form>
+
+                </td>
+            </tr>
+            </tbody>
+            <tfoot>
+            <tr>
+                <th>foot1</th>
+                <th>foot2</th>
+                <th>foot3</th>
+                <th>foot4</th>
+                <th>foot5</th>
+                <th>foot6</th>
+            </tr>
+            </tfoot>
+        </table>
+
+        Highlight which columns: <input type="text" id="highlight" name="highlight">
+        <input type="button" value="Select" onclick="highlight()">
+        <input type="button" value="Remove" onclick="unhighlight()">
+    </div>
+    <script>
+        function highlight(){
+            let column=document.getElementById('highlight').value;
+            let selectCol= '';
+            console.log(column);
+            switch (parseInt(column)){
+                case 1:
+                    document.querySelector('col.col1').classList.add('highlight');
+                    break;
+                case 2:
+                    selectCol=document.querySelector('col.col2');
+                    break;
+                case 3:
+                    selectCol=document.querySelector('col.col3');
+                    break;
+                case 4:
+                    selectCol=document.querySelector('col.col4');
+                    break;
+                case 5:
+                    selectCol=document.querySelector('col.col5');
+                    break;
+                case 6:
+                    selectCol=document.querySelector('col.col6');
+                    break;
+            }
+            console.log(selectCol);
+            selectCol.classList.add('highlight');
+            // let column=document.getElementById('highlight').value;
+            // let col='col.col'+column;
+            // console.log(col);
+            // let selectCol=document.querySelector(col);
+            // selectCol.classList.add('highlight');
+
+        }
+        function unhighlight(){
+            let column=document.getElementById('highlight').value;
+            let col='col.col'+column;
+            console.log(col);
+            let selectCol=document.querySelector(col);
+            selectCol.classList.remove('highlight');
+        }
+    </script>
+</body>
+</html>
