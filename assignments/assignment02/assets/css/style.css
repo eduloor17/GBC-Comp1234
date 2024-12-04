@@ -1,0 +1,201 @@
+/****************** same styles for my webpage *********************************/
+*{
+  color: whitesmoke;
+  font-family: Chalkboard, sans-serif;
+}
+body{
+  
+  margin: 8px;
+  background-color: rgba(255, 255, 255, 0.4);
+  background-image: url("../img/background.jpg");
+  position: absolute;
+  }
+/************* font part  ***********************************************/
+@font-face {
+  font-family: tittlefont; /*defining a name*/
+  src: url("../fonts/LakkiReddy-Regular.ttf"); /*looking for the font location.*/
+}
+h1 {
+  font-family: "MonteCarlo", cursive;
+  font-weight: 200;
+  font-style: normal;
+  font-size: 30px;
+}
+/************* header  ***********************************************/
+header>img{
+  /*logo */
+  float: left;
+  /*border: 5px solid blue;*/
+  width: 14%;
+  height: 90%;
+  margin: 6px 15px;
+  box-sizing: border-box;
+  border-radius: 80px;
+}
+header>h1 {
+  /*TITTLE WEB PAGE*/
+  float: right;
+  /*border: 5px solid red;*/
+  width: 82%;
+  font-size: 45px;
+  box-sizing: border-box;
+  text-align: center;
+  font-family: tittlefont, sans-serif;
+}
+header{
+  width: 1160px;
+  height: 150px;
+  margin: 0 auto;
+  /*border: 4px solid red;*/
+  background-color: dodgerblue;
+  border-radius: 35px 50px 35px;
+  box-shadow: 0 10px rgba(14, 1, 40, 0.7);
+}
+/*******************  nav  *****************************************/
+nav{
+  width: 1160px;
+  height: 35px;
+  margin: 15px auto;
+  /*padding: 10px 10px;*/
+  background-color: rgba(116, 80, 236, 0.78);
+  box-shadow: 10px 10px rgba(128, 0, 0, 0.58);
+  border-radius: 85px 13px 35px;
+  position:sticky;
+  top: 10px;
+  z-index: 1;
+  /*border: 3px solid red;*/
+}
+nav>ul{
+  list-style-type: none;
+  /*border: 3px solid blue;*/
+  padding: 0;
+  margin: 0 auto;
+  overflow: hidden;
+  width: fit-content;
+  }
+nav li {
+  float: left;
+}
+nav>ul>li>a {
+  color: whitesmoke;
+  padding: 8px 8px;
+  display: block;
+  text-decoration: underline;
+  text-align: center;
+}
+nav>ul>li>a:hover {
+  background-color: darkolivegreen;
+  padding: 7px 7px;
+  border-radius: 22px 10px;
+}
+/*********** sections *************************************************/
+#welcome, #reviews, #product, #purchase, footer {
+  /*SEPARATION BETWEEN SECTIONS*/
+  height: 100vh;
+
+  /*change height to absolute value MUST */
+  padding-left: 65px;
+  padding-top: 30px;
+}
+
+/****************** welcome ******************************************/
+#welcome>figure>a>img{
+  /*picture1 headphones*/
+  float: left;
+  margin: 0 auto;
+  display: block;
+  height:18%;
+  width:18%;
+ /* border:  2px solid blue;*/
+}
+#powerful{
+  /*border: 4px solid black;*/
+  float: right;
+  text-align: justify;
+  /*padding: 30px 3px;*/
+  width: 80%;
+}
+figure{
+  /*border: solid 5px white;*/
+  overflow: hidden;
+}
+#welcome{
+  clear: both;
+}
+#welcome>ul>li:nth-child(even){
+  background-color: lightseagreen;
+  width: fit-content;
+}
+.bottom{
+  border: 5px solid darkgreen;
+  background-color: yellowgreen;
+  padding: 10px 10px;
+  border-radius: 45% 50%;
+}
+/****************** reviews ******************************************/
+#reviews>ul>li:nth-child(2n-1){
+  background-color: #025998;
+  width: 600px;
+  margin: 10px 0;
+
+}
+#reviews>ul>li:nth-child(2n){
+  background-color: #f85586;
+  width: 600px;
+}
+/****************** purchase ******************************************/
+.photo1{
+  height:200px;
+  margin: 0 auto;
+  display: block;
+  width: 50%;
+  float: left;
+  /*border: 2px solid black;*/
+  box-sizing: border-box;
+}
+.photo2 {
+  height:200px;
+  margin: auto 0;
+  display: block;
+  width: 50%;
+  float: right;
+  /*border: 2px solid black;*/
+  box-sizing: border-box;
+}
+
+
+.images-center{
+  display: block;
+  margin: 0 auto;
+  overflow: hidden;
+  width: 50%;
+  box-sizing: border-box;
+  /*border: solid 3px black;*/
+  border-radius: 0 47px;
+  background-color: lightcyan;
+  box-shadow: 10px 10px rgba(8, 14, 31, 0.85);
+}
+
+
+#product>p{
+
+  clear: both;
+  /*overflow: auto;*/
+}
+/****************** footer ******************************************/
+footer>p:hover {
+  text-shadow: 1px 15px lightskyblue;
+}
+footer>p::first-letter {
+  font-size: 200%;
+  color: rgba(180, 239, 61, 0.95);
+}
+footer a[href^="https"]{
+    border: black dotted 5px;
+    background-color: #d82eea;
+    border-radius: 30px;
+}
+
+#references{
+  list-style-type: upper-latin;
+}
